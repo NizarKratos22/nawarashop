@@ -20,6 +20,7 @@ import lombok.ToString;
 @Getter
 @ToString
 public class Categorie {
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long code_categorie ;
@@ -29,6 +30,47 @@ public class Categorie {
 	
 	@Column(name="famille")
 	private String famille ;
+	
+	public Long getCode_categorie() {
+		return code_categorie;
+	}
+
+
+	public void setCode_categorie(Long code_categorie) {
+		this.code_categorie = code_categorie;
+	}
+
+
+	public String getNom_categorie() {
+		return nom_categorie;
+	}
+
+
+	public void setNom_categorie(String nom_categorie) {
+		this.nom_categorie = nom_categorie;
+	}
+
+
+	public String getFamille() {
+		return famille;
+	}
+
+
+	public void setFamille(String famille) {
+		this.famille = famille;
+	}
+
+
+	public Set<Produit> getProduit() {
+		return produit;
+	}
+
+
+	public void setProduit(Set<Produit> produit) {
+		this.produit = produit;
+	}
+
+
 	
     
 	@OneToMany(cascade = CascadeType.ALL,mappedBy="categorie")

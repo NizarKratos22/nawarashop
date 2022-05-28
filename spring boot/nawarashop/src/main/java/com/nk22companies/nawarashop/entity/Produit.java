@@ -18,6 +18,76 @@ import lombok.ToString;
 @Getter
 @ToString
 public class Produit {
+public String getRef_pdt() {
+		return ref_pdt;
+	}
+
+
+	public void setRef_pdt(String ref_pdt) {
+		this.ref_pdt = ref_pdt;
+	}
+
+
+	public String getDesignation() {
+		return designation;
+	}
+
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+
+	public String getDescription() {
+		return description;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
+	public BigDecimal getPrix() {
+		return prix;
+	}
+
+
+	public void setPrix(BigDecimal prix) {
+		this.prix = prix;
+	}
+
+
+	public String getImage() {
+		return image;
+	}
+
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+
+	public int getQte_stock() {
+		return qte_stock;
+	}
+
+
+	public void setQte_stock(int qte_stock) {
+		this.qte_stock = qte_stock;
+	}
+
+
+	public Categorie getCategorie() {
+		return categorie;
+	}
+
+
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+	}
+
+
 @Id private String ref_pdt ; 
 
 @Column(name="designation")

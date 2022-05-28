@@ -1,0 +1,23 @@
+<table border="1">
+    <thead>
+      <tr>
+          <th>Image</th>
+        <th>Designation</th>
+        <th>description</th>
+        <th>Quantité Stock</th>
+       <th>prix</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produit of produits">
+          <td>
+              <img [src]="produit.image" height="50"/>
+          </td>
+          <td>{{produit.designation}}</td>
+          <td>{{produit.description}}</td>
+          <td>{{produit.qte_stock}}</td>
+          <td>{{produit.prix | currency : 'TND'}}</td>
+
+      </tr>
+    </tbody>
+  </table>
