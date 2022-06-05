@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProduitListComponent } from './components/produit-list/produit-list.component';
 import { ProduitService } from './services/produit.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ProduitCategoryComponent } from './components/produit-category/produit-category.component';
 
 
 const routes: Routes =[
@@ -22,7 +23,8 @@ const routes: Routes =[
   declarations: [
     AppComponent,
     ProduitListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProduitCategoryComponent
   ],
   imports: [
     BrowserModule,

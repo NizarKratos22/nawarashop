@@ -1,0 +1,5 @@
+<div class="list-group">
+    <a [routerLink]="'/categorie/'+categorie.code_categorie" *ngFor="let categorie of produitCategories" class="list-group-item" 
+    routerLinkActive="bg-primary text-white font-weight-bold">{{categorie.famille}} / {{categorie.nom_categorie}}</a>
+   
+</div>
