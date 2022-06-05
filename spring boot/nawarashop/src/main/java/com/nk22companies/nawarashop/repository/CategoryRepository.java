@@ -7,5 +7,8 @@ import com.nk22companies.nawarashop.entity.Categorie;
 
 @RepositoryRestResource(collectionResourceRel="categories", path="produits-categorie")
 public interface CategoryRepository extends JpaRepository<Categorie, Long>{
+	
+	
 
+	
 }
