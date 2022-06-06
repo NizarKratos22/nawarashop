@@ -9,10 +9,11 @@ import { ProduitService } from './services/produit.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ProduitCategoryComponent } from './components/produit-category/produit-category.component';
 import { SearchComponent } from './components/search/search.component';
+import { ProduitDetailsComponent } from './components/produit-details/produit-details.component';
 
 
 const routes: Routes =[
-
+    {path:'produits/:id' ,component:ProduitDetailsComponent},
      {path:'produits' ,component:ProduitListComponent},
      {path:'search/:keyword' ,component:ProduitListComponent},
      {path:'categorie/:id' ,component:ProduitListComponent},
@@ -29,7 +30,8 @@ const routes: Routes =[
     ProduitListComponent,
     PageNotFoundComponent,
     ProduitCategoryComponent,
-    SearchComponent
+    SearchComponent,
+    ProduitDetailsComponent
   ],
   imports: [
     BrowserModule,

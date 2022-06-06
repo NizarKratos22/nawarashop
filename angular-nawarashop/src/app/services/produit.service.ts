@@ -35,6 +35,11 @@ export class ProduitService {
     return this.getProduitsList(searchUrl);
   }
   
+  get(produitref :string):Observable<Produit>{
+    const produitDetailUrl =`${this.baseUrl}/${produitref}`;
+   return this.httpClient.get<Produit>(produitDetailUrl);
+
+  }
 
 }
 
