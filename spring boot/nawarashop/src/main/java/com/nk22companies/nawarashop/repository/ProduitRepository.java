@@ -19,4 +19,8 @@ public interface ProduitRepository extends JpaRepository<Produit, String>{
    Page<Produit> findBycodecategorie(@Param("codecategorie") Long codecategorie ,Pageable pageable);
 	
 	
+	@RestResource(path="searchbykeyword")
+	 Page<Produit> findByDesignationContaining(@Param("designation") String keyword ,Pageable pageable);
+	
+	
 }

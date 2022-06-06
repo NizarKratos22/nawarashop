@@ -1,0 +1,14 @@
+<div class="col-md-10">
+    <div class="row">
+         <div class="col-md-10">
+   <input type="text" #searchInput
+   (keyup.enter)="searchProduits(searchInput.value)"
+   class="form-control" placeholder="Search de produit">
+         </div>
+         <div class="col-md-2">
+             <button type="submit"
+             (click)="searchProduits(searchInput.value)"
+             class="btn btn-primary">Search</button>
+         </div>   
+    </div>
+</div>
